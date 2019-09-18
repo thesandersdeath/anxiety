@@ -227,7 +227,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Ne sais-tu pas que la solitude est autant associée à la mort prématurée que de fumer 15 cigarettes par jour?-
+b: Ne sais-tu pas que la solitude est autant associée à la mort prématurée que de fumer quinze cigarettes par jour?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
@@ -408,38 +408,38 @@ n: BONNE CHANCE
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n: PREMIER MANCHE: *COMBAT!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Tiens. Mon feed Facebook dit qu'il y a une fête ce weekend.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: Mais elle organise pas une fête *chaque* weekend, celle-là?
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: Quel vide intérieur est-ce qu'elle essaye de remplir? Elle doit pas être bien là-dedans!
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: Ah, et j'ai été invité?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: Très bien!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Dis oui, ou on va mourir de solitude!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Dis non, c'est plein de drogues dangereuses!](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Ignore-la, on rend toujours les fêtes nulles.](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: Quinze cigarettes par jour, humain! Quinze!
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +447,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: Puis personne ne viendra à notre enterrement, on va jeter nos cendres dans l'océan, on va se faire manger par une baleine,
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: et on deviendra du CACA DE BALEINE!
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,25 +468,25 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: Donc oui on devrait aller à cette fête!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: Pense juste à ramener ton ordi pour bosser, et ne pas être un parasite sociétal.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: Tant qu'il n'y aura pas de PAIN DE MIE
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: BON. Si ça peut te faire taire, d'accord.
 
-h: I'll say yes.
+h: Je vais dire oui.
 
 {{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+b: Caca de baleine, humain! Caca de baleine!
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -498,7 +498,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: ou pire... DU PAIN DE MIE
 {{/if}}
 
 {{if _.whitebread}}
@@ -506,11 +506,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: On va se tuer avec tellement d'héroïne et de pain de mie que notre gros cadavre ne rentrera même pas dans le four crématoire!
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: On va se tuer avec tellement de drogues que les pompes funèbres vont se demander pourquoi notre corps était *déjà* pré-embaumé!
 {{/if}}
 
 ```
@@ -521,14 +521,14 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.parasite}}
-b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+b: En plus, on peut pas, on doit travailler pour ne pas être un horrible parasite sociétal!
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: BON. Si ça peut te faire taire, d'accord.
 
-h: I'll say no.
+h: Je dirais non.
 
 `_.partyinvite="no"`
 
