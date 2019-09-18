@@ -164,7 +164,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-h: Bon, arrêtons de casse le quatrième mur.
+h: Bon, arrêtons de casser le quatrième mur.
 
 ```
 Game.clearText();
